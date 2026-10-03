@@ -74,7 +74,7 @@ app.config["MAX_CONTENT_LENGTH"] = MAX_FILE_SIZE_MB * 1024 * 1024
 
 # ── Load model once at startup ────────────────────────────────────────────────
 print("\nLoading Hybrid CNN + ResNet50 model...")
-model_path = MODEL_DIR / "best_model_hybrid.keras"
+model_path = MODEL_DIR / "best_model.keras"
 MODEL = load_model(str(model_path))
 print(f"  Model loaded  : {model_path.name}")
 print(f"  Input shape   : {MODEL.input_shape}")
